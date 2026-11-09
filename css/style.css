@@ -485,7 +485,9 @@ grid-template-columns:repeat(3,1fr);
 gap:30px;
 
 }
-
+.service-card:nth-child(7){
+    grid-column:2;
+}
 .service-card{
 
 background:#F7FBFF;
@@ -1162,9 +1164,14 @@ html{
         font-size:32px;
     }
 
-    .stats{
+   .stats{
         flex-direction:column;
         gap:20px;
+    }
+
+    /* Center Corporate Giveaways on mobile */
+    .service-card:nth-child(7){
+        grid-column:1;
     }
 
 }
